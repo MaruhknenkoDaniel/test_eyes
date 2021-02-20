@@ -8,6 +8,11 @@ html, body{
     background-size: 400% 400% ;
     animation: gradient 10s ease infinite;
   }
+  h1{
+    text-align: center
+    text-size 15px
+  }
+
   @keyframes gradient {
     0% {
       background-position: 0 50% ;
