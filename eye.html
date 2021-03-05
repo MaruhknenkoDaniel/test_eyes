@@ -20,19 +20,39 @@
         </div>
     </div>
          <h1>Добро пожаловать на мой сайт</h1>
-         <p>На етом сайте вы можете узнать ваш хорактер по цвету глаз.Для того что б всё заработало надо</br>-Ниже выбрать цвет глаз</br>-И нажать узнать</br> </p>
-         <p> <select size="3" multiple name="Цвет глаз (без врождённых нарушений)">
-            <option disabled>Выберите ваш цвет глаз</option>
-            <option value="Голубой">Голубой</option>
-            <option value="Синий">Синий</option>
-            <option value="Серый">Серый</option>
-            <option value="Зелёный">Зелёный</option>
-            <option value="Болотный">Болотный</option>
-            <option value="Карий">Карий</option>
-            <option value="Чёрный">Чёрный</option>
-            <option value="Жёлтый">Жёлтый</option>
-        </p> </select>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+         <p>На етом сайте вы можете узнать ваш хорактер по цвету глаз.Для того что б всё заработало надо</br>-Ниже выбрать цвет глаз</br>-И нажать «Получить ответ» </br></p>
+    <div class="row">
+        <div class="col-sm">
+            <select id="select" class="form-control" name="fruct">
+                <option value="1">яблоко</option>
+                <option value="2" selected>апельсин</option>	
+                <option value="3">виноград</option>	
+            </select>	
+        </div>
+        <div class="col-sm text-center">
+            <button id="js-button" class="btn btn-outline-primary">Получить текст</button>
+        </div>
+        <div class="col-sm" id="js-result">
+            Результат: 
+        </div>
+    </div>
+    
+    <link rel="stylesheet" href="https://snipp.ru/cdn/bootstrap/4.3/bootstrap.min.css">
+    <style type="text/css">
+    #js-result {
+        font-size: 16px;
+        line-height: 38px;
+        color: green;
+    }
+    </style>
+    
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
     <script src="eye.js"></script>
+    <script>
+    $('#js-button').click(function(){
+        var value = $('#select option:selected').text();
+        $('#js-result').html('Результат: ' + value);
+    });
+    </script>
 </body>
 </html>
