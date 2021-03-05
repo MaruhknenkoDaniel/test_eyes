@@ -1,36 +1,4 @@
-html, body{
-    height: 100%;
-  }
-  body{
-    margin: 0;
-  
-    background: linear-gradient(45deg,#B3EB50,#429421);
-    background-size: 400% 400% ;
-    animation: gradient 10s ease infinite;
-  }
-  select{
-    background: #189f21e4;
-    color: #429421;
-    font-size: 25px
- }
-  h1{
-    text-align: center;
-    font-size: 15px
-  }
-
-  @keyframes gradient {
-    0% {
-      background-position: 0 50% ;
-    }
-    50%{
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0 50%;
-    }
-  }
-  * 
-{
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -41,7 +9,7 @@ html, body{
   line-height: 1;
 }
 .header {
-  background: #189f21e4;
+  background: rgb(0, 138, 67);
   /* width: 500px; */
   /* margin: 50px auto; */
 }
@@ -80,3 +48,35 @@ html, body{
 .header .nav ul li a:hover {
   background: rgba(10, 10, 10, 0.1);
 }
+  body{
+    margin: 0;
+  
+    background: linear-gradient(45deg,#B3EB50,#429421);
+    background-size: 400% 400% ;
+    animation: gradient 10s ease infinite;
+  }
+
+  select{
+    background: linear-gradient(45deg,#B3EB50,#429421);
+    background-size: 400% 400% ;
+    animation: gradient 10s ease infinite;
+    color: #2d6816;
+    font-size: 15px
+ }
+
+  h1{
+    text-align: center;
+    font-size: 25px
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0 50% ;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
